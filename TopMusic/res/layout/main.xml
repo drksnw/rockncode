@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    />
+<android.support.v4.widget.DrawerLayout
+
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Main Layout -->
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+    >
+        <ListView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/songsList" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <!-- Drawer Layout -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/drawerPane"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="#222"
+    >
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Playlists locales" android:textColor="#fff"/>
+        <ListView
+                android:id="@+id/listDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="#888"
+                android:dividerHeight="1dp"
+        />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Playlists en ligne" android:textColor="#fff"/>
+        <ListView
+                android:id="@+id/onlineListDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="#888"
+                android:dividerHeight="1dp"
+        />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+

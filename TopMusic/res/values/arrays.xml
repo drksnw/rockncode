@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="songproperties">
+        <item>Chercher sur YouTube</item>
+        <item>Changer position</item>
+        <item>Supprimer</item>
+    </string-array>
+</resources>

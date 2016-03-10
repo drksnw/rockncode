@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res/me.guillaumepetitpierre.topmusic"
+      tools:context=".MainActivity">
+    <item android:id="@+id/action_add"
+          android:icon="@drawable/ic_action_new" android:title="Ajouter"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_share" android:title="Partager" />
+    <item android:id="@+id/action_refresh" android:title="Rafraîchir" />
+
+
+</menu>
